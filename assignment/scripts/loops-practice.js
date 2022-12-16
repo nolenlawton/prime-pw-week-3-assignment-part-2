@@ -54,9 +54,39 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
+let index=0;
+let end=stars.length;
+
+while(index<end){
+  console.log(stars[index]);
+  index++;
+}
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
+index=0
+end=6
+
+while(index<end){
+  console.log(index);
+  index++;
+}
+
+// end=5
+// while(index<=end){
+//
+// 'end=6' vs 'end=5'
+// wouldnt it be more accurate to create the while loop using '<='
+// in case our index was being increased by a number less than one
+// is it because '6' is more similar to using '.length'?
+
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+index=10
+end=4
+
+while(index>end){
+  console.log(index);
+  index--;
+}
